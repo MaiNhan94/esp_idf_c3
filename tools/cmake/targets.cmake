@@ -4,10 +4,11 @@
 macro(__target_init)
     # Input is IDF_TARGET environement variable
     set(env_idf_target $ENV{IDF_TARGET})
-
+    message(STATUS "[NHAN DEBUG]env_idf_target: ${env_idf_target}")
     if(NOT env_idf_target)
         # IDF_TARGET not set in environment, see if it is set in cache
         if(IDF_TARGET)
+            message(STATUS "[NHAN DEBUG] ${IDF_TARGET})")
             set(env_idf_target ${IDF_TARGET})
         else()
             set(env_idf_target esp32)

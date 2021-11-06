@@ -91,7 +91,7 @@ void heap_caps_init(void)
     heap_t temp_heaps[num_heaps];
     size_t heap_idx = 0;
 
-    ESP_EARLY_LOGI(TAG, "Initializing. RAM available for dynamic allocation:");
+    ESP_EARLY_LOGI(TAG, "Initializing. RAM available for dynamic allocation:%d", num_regions);
     for (size_t i = 0; i < num_regions; i++) {
         soc_memory_region_t *region = &regions[i];
         const soc_memory_type_desc_t *type = &soc_memory_types[region->type];

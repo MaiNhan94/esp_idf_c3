@@ -29,6 +29,7 @@ set IDF_TOOLS_PY_PATH=%IDF_PATH%\tools\idf_tools.py
 set IDF_TOOLS_JSON_PATH=%IDF_PATH%\tools\tools.json
 set IDF_TOOLS_EXPORT_CMD=%IDF_PATH%\export.bat
 set IDF_TOOLS_INSTALL_CMD=%IDF_PATH%\install.bat
+set IDF_TYPE="PORT"
 echo Setting IDF_PATH: %IDF_PATH%
 echo.
 
